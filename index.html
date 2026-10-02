@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brothers Thai | Muay Thai & Jiu-Jitsu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#home" class="logo">
+            <img src="logo-bt.jpg" alt="Brothers Thai" class="logo-img">
+            <span>BROTHERS<span class="logo-accent">THAI</span></span>
+        </a>
+        <nav class="nav" id="mainNav">
+            <a href="#home">Home</a>
+            <a href="#sobre">Nossa História</a>
+            <a href="#equipe">Equipe</a>
+            <a href="#personal">Personal</a>
+            <a href="#horarios">Horários</a>
+            <a href="#avaliacoes">Avaliações</a>
+            <a href="#contato">Unidades</a>
+        </nav>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <div class="floating-buttons">
+        <a href="#home" id="backToTop" class="float-btn up-btn" title="Voltar ao topo">
+            <i class="fa-solid fa-chevron-up"></i>
+        </a>
+        <a href="https://instagram.com/brothers_thai_team" target="_blank" class="float-btn inst-btn">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/5516997764438" target="_blank" class="float-btn wpp-btn">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <main class="main-content">
+
+        <section id="home" class="section-quadro hero">
+            <div class="particles" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span>
+            </div>
+            <div class="hero-content">
+                <h1 id="typewriter"></h1>
+                <p class="subtitle">Estratégia e disciplina. Do primeiro treino à faixa preta, estamos com você.</p>
+
+                <div class="hero-conversion">
+                    <a href="https://wa.me/5516997764438?text=Olá,%20quero%20agendar%20minha%20aula%20experimental!"
+                        target="_blank" class="btn-solid-white">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Agendar via WhatsApp</span>
+                        <i class="fa-solid fa-arrow-right arrow-icon"></i>
+                    </a>
+                    <a href="https://share.google/JyimrFmqNP4rsb4Jq" target="_blank" class="google-reviews">
+                        <span class="stars">★★★★★</span>
+                        <span class="reviews-text">4,9 · 46 avaliações no Google</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="section-quadro sobre">
+            <div class="container-grid">
+                <div class="sobre-text">
+                    <span class="section-eyebrow"><i class="fa-solid fa-shield-heart"></i> Nossa jornada</span>
+                    <h2>Nossa História</h2>
+                    <div class="red-line"></div>
+                    <p>A Brothers Thai é referência em Muay Thai e Jiu-Jitsu em Araraquara, com treinos para todas as
+                        idades e níveis — do iniciante ao avançado. Nosso propósito é promover qualidade de vida,
+                        unindo técnica, disciplina e bem-estar físico e mental.</p>
+                    <p style="margin-top: 1rem;">Hoje, nos orgulhamos de ter expandido nossa infraestrutura para
+                        <strong>três unidades</strong> na cidade. Nossa estrutura foi pensada para forjar campeões,
+                        oferecendo tatames de alta densidade e um ambiente de evolução constante para todos os níveis.
+                    </p>
+                    <div class="sobre-stats">
+                        <div class="sobre-stat">
+                            <span class="sobre-stat-num">3</span>
+                            <span class="sobre-stat-label">Unidades</span>
+                        </div>
+                        <div class="sobre-stat">
+                            <span class="sobre-stat-num">2</span>
+                            <span class="sobre-stat-label">Modalidades</span>
+                        </div>
+                        <div class="sobre-stat">
+                            <span class="sobre-stat-num">4,9★</span>
+                            <span class="sobre-stat-label">No Google</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sobre-image">
+                    <img src="unidade-foto.jpg"
+                        alt="Alunos treinando na Brothers Thai" class="sobre-img-real">
+                    <span class="sobre-img-badge"><img src="logo-bt.jpg" alt="Brothers Thai"></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="equipe" class="section-quadro equipe">
+            <div class="container">
+                <div class="equipe-header">
+                    <span class="section-eyebrow"><i class="fa-solid fa-user-ninja"></i> Quem comanda o tatame</span>
+                    <h2>Nossa Liderança</h2>
+                    <div class="red-line center-line"></div>
+
+                    <!-- Botões Seletores de Unidade -->
+                    <div class="unidade-selectors">
+                        <button class="btn-unidade active" data-target="unidade-1">Unidade 1</button>
+                        <button class="btn-unidade" data-target="unidade-2">Unidade 2</button>
+                        <button class="btn-unidade" data-target="unidade-3">Unidade 3</button>
+                    </div>
+                </div>
+
+                <!-- ================= UNIDADE 1 ================= -->
+                <div id="unidade-1" class="unidade-wrapper active">
+                    <div class="grid-equipe mestres">
+                        <div class="card-equipe mestre">
+                            <img src="logo-bt.jpg"
+                                alt="Mestre Rafael" class="foto-perfil mestre-foto logo-placeholder">
+                            <h3>Mestre Rafael</h3>
+                            <p class="graduacao">Mestre de Jiu-Jitsu</p>
+                        </div>
+                        <div class="card-equipe mestre">
+                            <img src="logo-bt.jpg"
+                                alt="Mestre Leandro" class="foto-perfil mestre-foto logo-placeholder">
+                            <h3>Mestre Leandro</h3>
+                            <p class="graduacao">Mestre de Muay Thai</p>
+                        </div>
+                    </div>
+
+                    <div class="equipe-header subtitle-equipe">
+                        <h3>Instrutores</h3>
+                        <p>Suporte especializado em cada treino</p>
+                    </div>
+
+                    <div class="grid-equipe instrutores">
+                        <div class="card-equipe">
+                            <img src="logo-bt.jpg"
+                                alt="Prof. Christofer" class="foto-perfil instrutor-foto logo-placeholder">
+                            <h4>Prof. Christofer</h4>
+                            <p>Instrutor</p>
+                        </div>
+                        <div class="card-equipe">
+                            <img src="logo-bt.jpg"
+                                alt="Prof. Marcão" class="foto-perfil instrutor-foto logo-placeholder">
+                            <h4>Prof. Marcão</h4>
+                            <p>Instrutor</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ================= UNIDADE 2 ================= -->
+                <div id="unidade-2" class="unidade-wrapper">
+                    <div class="grid-equipe mestres">
+                        <div class="card-equipe mestre">
+                            <img src="logo-bt.jpg"
+                                alt="Mestre Rafael" class="foto-perfil mestre-foto logo-placeholder">
+                            <h3>Mestre Rafael</h3>
+                            <p class="graduacao">Mestre de Jiu-Jitsu</p>
+                        </div>
+                        <div class="card-equipe mestre">
+                            <img src="logo-bt.jpg"
+                                alt="Mestre Weverton" class="foto-perfil mestre-foto logo-placeholder">
+                            <h3>Mestre Weverton</h3>
+                            <p class="graduacao">Mestre de Muay Thai</p>
+                        </div>
+                    </div>
+
+                    <div class="equipe-header subtitle-equipe">
+                        <h3>Instrutores</h3>
+                        <p>Suporte especializado em cada treino</p>
+                    </div>
+
+                    <div class="grid-equipe instrutores">
+                        <div class="card-equipe">
+                            <img src="logo-bt.jpg"
+                                alt="Prof. Lucas" class="foto-perfil instrutor-foto logo-placeholder">
+                            <h4>Prof. Lucas</h4>
+                            <p>Instrutor</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ================= UNIDADE 3 ================= -->
+                <div id="unidade-3" class="unidade-wrapper">
+                    <div class="grid-equipe mestres">
+                        <div class="card-equipe mestre">
+                            <img src="logo-bt.jpg"
+                                alt="Mestre Mutante" class="foto-perfil mestre-foto logo-placeholder">
+                            <h3>Mestre Mutante</h3>
+                            <p class="graduacao">Mestre de Jiu-Jitsu</p>
+                        </div>
+                        <div class="card-equipe mestre">
+                            <img src="logo-bt.jpg"
+                                alt="Mestre Richard" class="foto-perfil mestre-foto logo-placeholder">
+                            <h3>Mestre Richard</h3>
+                            <p class="graduacao">Mestre de Muay Thai</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="personal" class="section-quadro personal">
+            <div class="particles" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="container">
+                <div class="equipe-header text-center">
+                    <span class="section-eyebrow"><i class="fa-solid fa-star"></i> Treino exclusivo</span>
+                    <h2>Aula Personal</h2>
+                    <div class="red-line center-line"></div>
+                    <p class="subtitle" style="margin-bottom: 4rem;">Evolução acelerada com treinos exclusivos 1 a 1.
+                        Escolha sua modalidade e fale direto com o mestre.</p>
+                </div>
+
+                <div class="grid-personal">
+                    <div class="card-personal">
+                        <i class="fa-solid fa-user-ninja personal-watermark"></i>
+                        <div class="personal-icon-circle">
+                            <i class="fa-solid fa-user-ninja"></i>
+                        </div>
+                        <h3>Jiu-Jitsu</h3>
+                        <p>Domine a arte suave. Foco em alavancas, estrangulamentos e defesa pessoal com acompanhamento
+                            individual focado nos seus objetivos e limitações.</p>
+                        <ul class="personal-beneficios">
+                            <li><i class="fa-solid fa-check"></i> Técnica individual, no seu ritmo</li>
+                            <li><i class="fa-solid fa-check"></i> Foco em defesa pessoal real</li>
+                            <li><i class="fa-solid fa-check"></i> Evolução mais rápida que em turma</li>
+                        </ul>
+                        <div class="personal-chips">
+                            <span><i class="fa-regular fa-clock"></i> Horário flexível</span>
+                            <span><i class="fa-solid fa-user"></i> 100% individual</span>
+                        </div>
+                        <a href="https://wa.me/5516997764438?text=Olá,%20tenho%20interesse%20nas%20aulas%20de%20Personal%20de%20Jiu-Jitsu!"
+                            target="_blank" class="btn-outline-red mt-auto">
+                            <i class="fa-brands fa-whatsapp"></i> Falar com Prof. Jiu-Jitsu
+                        </a>
+                    </div>
+
+                    <div class="card-personal">
+                        <i class="fa-solid fa-hand-fist personal-watermark"></i>
+                        <div class="personal-icon-circle">
+                            <i class="fa-solid fa-hand-fist"></i>
+                        </div>
+                        <h3>Muay Thai</h3>
+                        <p>A arte das oito armas. Aprimore sua técnica de golpes, perca peso e melhore seu
+                            condicionamento físico de forma intensa no seu próprio ritmo.</p>
+                        <ul class="personal-beneficios">
+                            <li><i class="fa-solid fa-check"></i> Perda de peso acelerada</li>
+                            <li><i class="fa-solid fa-check"></i> Condicionamento físico intenso</li>
+                            <li><i class="fa-solid fa-check"></i> Técnica refinada de golpes</li>
+                        </ul>
+                        <div class="personal-chips">
+                            <span><i class="fa-regular fa-clock"></i> Horário flexível</span>
+                            <span><i class="fa-solid fa-user"></i> 100% individual</span>
+                        </div>
+                        <a href="https://wa.me/5516997764438?text=Olá,%20tenho%20interesse%20nas%20aulas%20de%20Personal%20de%20Muay%20Thai!"
+                            target="_blank" class="btn-outline-red mt-auto">
+                            <i class="fa-brands fa-whatsapp"></i> Falar com Prof. Muay Thai
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="horarios" class="section-quadro horarios">
+            <div class="container text-center">
+                <div class="horarios-header">
+                    <span class="section-eyebrow"><i class="fa-regular fa-calendar-days"></i> Programação semanal</span>
+                    <h2>Grade de Horários</h2>
+                    <div class="red-line center-line"></div>
+                    <p class="subtitle">Mesma programação de Muay Thai e Jiu-Jitsu nas nossas 3 unidades.</p>
+                </div>
+
+                <div class="tabela-horarios-wrap">
+                    <table class="tabela-horarios tabela-horarios-grade">
+                        <thead>
+                            <tr>
+                                <th class="th-hora"><i class="fa-regular fa-clock"></i></th>
+                                <th data-day="1">Seg</th>
+                                <th data-day="2">Ter</th>
+                                <th data-day="3">Qua</th>
+                                <th data-day="4">Qui</th>
+                                <th data-day="5">Sex</th>
+                                <th data-day="6">Sáb</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="td-hora">06h</td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><span class="badge-fechado">Fechado</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td-hora">07h</td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><span class="badge-fechado">Fechado</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td-hora">08h</td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><span class="badge-fechado">Fechado</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td-hora">09h</td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><span class="badge-fechado">Fechado</span></td>
+                            </tr>
+                            <tr class="linha-intervalo">
+                                <td class="td-hora">10h</td>
+                                <td><span class="badge-fechado">Fechado</span></td>
+                                <td><span class="badge-fechado">Fechado</span></td>
+                                <td><span class="badge-fechado">Fechado</span></td>
+                                <td><span class="badge-fechado">Fechado</span></td>
+                                <td><span class="badge-fechado">Fechado</span></td>
+                                <td><span class="badge-infantil">Infantil</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td-hora">16h</td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><span class="badge-jiujitsu">Jiu-Jitsu</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td-hora">17h</td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><span class="badge-fechado">Fechado</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td-hora">18h</td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><span class="badge-fechado">Fechado</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td-hora">19h</td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><span class="badge-fechado">Fechado</span></td>
+                                <td><span class="badge-fechado">Fechado</span></td>
+                                <td><span class="badge-fechado">Fechado</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td-hora">20h</td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><span class="badge-jiujitsu">Jiu-Jitsu</span></td>
+                                <td><i class="fa-solid fa-check check-icon"></i></td>
+                                <td><span class="badge-jiujitsu">Jiu-Jitsu</span></td>
+                                <td><span class="badge-fechado">Fechado</span></td>
+                                <td><span class="badge-fechado">Fechado</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td-hora">21h</td>
+                                <td><span class="badge-jiujitsu">Jiu-Jitsu</span></td>
+                                <td><span class="badge-fechado">Fechado</span></td>
+                                <td><span class="badge-jiujitsu">Jiu-Jitsu</span></td>
+                                <td><span class="badge-fechado">Fechado</span></td>
+                                <td><span class="badge-fechado">Fechado</span></td>
+                                <td><span class="badge-fechado">Fechado</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="horarios-legenda">
+                    <span><i class="fa-solid fa-check check-icon"></i> Muay Thai</span>
+                    <span><span class="badge-jiujitsu">Jiu-Jitsu</span></span>
+                    <span><span class="badge-infantil">Infantil</span></span>
+                    <span><span class="badge-fechado">Fechado</span></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="avaliacoes" class="section-quadro avaliacoes">
+            <div class="container">
+                <div class="equipe-header text-center">
+                    <span class="section-eyebrow"><i class="fa-solid fa-comment-dots"></i> Depoimentos reais</span>
+                    <h2>O Que Dizem Nossos Alunos</h2>
+                    <div class="red-line center-line"></div>
+
+                    <a href="https://share.google/JyimrFmqNP4rsb4Jq" target="_blank" class="google-score">
+                        <i class="fa-brands fa-google"></i>
+                        <span class="google-score-number">4,9</span>
+                        <span class="stars">★★★★★</span>
+                        <span class="google-score-text">46 avaliações no Google</span>
+                    </a>
+                </div>
+
+                <div class="grid-depoimentos">
+                    <div class="card-depoimento">
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+                        <div class="stars-row">★★★★★</div>
+                        <p>"Lugar top, professores atenciosos e sempre dispostos a nos ajudar. Onde cansamos o corpo
+                            e descansamos a mente."</p>
+                        <div class="autor-depoimento">
+                            <div class="autor-avatar">BS</div>
+                            <div>
+                                <h4>Bruna Suares</h4>
+                                <span>Aluna</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-depoimento">
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+                        <div class="stars-row">★★★★★</div>
+                        <p>"Eu amo esse lugar! Aula top com um mestre mais TOP ainda, muito atencioso, competente, e
+                            uma preocupação e cuidado com cada aluno que é impressionante!"</p>
+                        <div class="autor-depoimento">
+                            <div class="autor-avatar">VA</div>
+                            <div>
+                                <h4>Valéria Andrade</h4>
+                                <span>Aluna</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-depoimento">
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+                        <div class="stars-row">★★★★★</div>
+                        <p>"Tinha muito receio de fazer Muay Thai por vários motivos, mas agora que comecei não
+                            paro mais. Professores muito gente boa, recomendo de olhos fechados!"</p>
+                        <div class="autor-depoimento">
+                            <div class="autor-avatar">CL</div>
+                            <div>
+                                <h4>Carla Lopes</h4>
+                                <span>Local Guide · Google</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-depoimento">
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+                        <div class="stars-row">★★★★★</div>
+                        <p>"Sem dúvidas o melhor lugar, tanto o atendimento quanto os professores sempre com
+                            dedicação com os alunos. Só tenho a agradecer."</p>
+                        <div class="autor-depoimento">
+                            <div class="autor-avatar">TP</div>
+                            <div>
+                                <h4>Tayssa Pani</h4>
+                                <span>Aluna</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-depoimento">
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+                        <div class="stars-row">★★★★★</div>
+                        <p>"Lugar incrível para se treinar, professor muito bom e qualificado, dá muita atenção a
+                            todos os alunos. O melhor!"</p>
+                        <div class="autor-depoimento">
+                            <div class="autor-avatar">GT</div>
+                            <div>
+                                <h4>Gabriel Tartarini</h4>
+                                <span>Aluno</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-depoimento">
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+                        <div class="stars-row">★★★★★</div>
+                        <p>"Academia bem estruturada, professor dedicado e preocupado não só com o lado técnico,
+                            mas também com o pessoal. Treinos diferentes todo dia — salvou minha vida, tanto pelo
+                            esporte quanto pela amizade."</p>
+                        <div class="autor-depoimento">
+                            <div class="autor-avatar">NN</div>
+                            <div>
+                                <h4>Nei Nascimento</h4>
+                                <span>Aluno</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-depoimento">
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+                        <div class="stars-row">★★★★★</div>
+                        <p>"Professores atenciosos, ambiente família, boa localização e profissionais capacitados.
+                            Excelente academia!"</p>
+                        <div class="autor-depoimento">
+                            <div class="autor-avatar">RA</div>
+                            <div>
+                                <h4>Rafael Aniceto</h4>
+                                <span>Aluno</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-depoimento">
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+                        <div class="stars-row">★★★★★</div>
+                        <p>"Ao respeitar meu limite e o ótimo atendimento desde o primeiro dia. Super recomendo!"</p>
+                        <div class="autor-depoimento">
+                            <div class="autor-avatar">JS</div>
+                            <div>
+                                <h4>Jayne Soraya</h4>
+                                <span>Aluna</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="avaliacoes-cta">
+                    <i class="fa-brands fa-google cta-google-icon"></i>
+                    <div class="avaliacoes-cta-text">
+                        <h3>Quer ver mais?</h3>
+                        <p>Confira todas as nossas avaliações reais direto no perfil do Google.</p>
+                    </div>
+                    <a href="https://share.google/JyimrFmqNP4rsb4Jq" target="_blank" class="btn-outline-red">
+                        Ver todas as avaliações
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="section-quadro contato">
+            <div class="particles" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span>
+            </div>
+            <div class="container">
+                <div class="contato-header">
+                    <span class="section-eyebrow"><i class="fa-solid fa-location-dot"></i> Onde treinar</span>
+                    <h2>Nossas Unidades</h2>
+                    <div class="red-line center-line"></div>
+                    <p class="contato-sub">Escolha a Brothers Thai mais próxima de você, em Araraquara.</p>
+                    <div class="contato-chips">
+                        <span><i class="fa-solid fa-dumbbell"></i> 3 unidades</span>
+                        <span><i class="fa-brands fa-google"></i> 4,9 no Google</span>
+                        <span><i class="fa-solid fa-comments"></i> Fale agora pelo WhatsApp</span>
+                    </div>
+                </div>
+                <div class="grid-mapas">
+                    <div class="mapa-item">
+                        <span class="mapa-badge"><i class="fa-solid fa-dumbbell"></i> Unidade 1</span>
+                        <h3>Jardim Padre Anchieta</h3>
+                        <a class="mapa-link" href="https://www.google.com/maps/dir/?api=1&destination=Av.+Alberto+Santos+Dumont,+199+-+Jardim+Padre+Anchieta,+Araraquara+-+SP,+14807-219"
+                            target="_blank">
+                            <i class="fa-solid fa-location-dot"></i> Av. Alberto Santos Dumont, 199 - Araraquara/SP
+                        </a>
+                        <a class="mapa-link" href="tel:+5516997933828">
+                            <i class="fa-solid fa-phone"></i> (16) 99793-3828
+                        </a>
+                        <iframe
+                            src="https://www.google.com/maps?q=Av.+Alberto+Santos+Dumont,+199+-+Jardim+Padre+Anchieta,+Araraquara+-+SP,+14807-219&output=embed"
+                            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <a class="btn-outline-red mapa-btn-rota"
+                            href="https://www.google.com/maps/dir/?api=1&destination=Av.+Alberto+Santos+Dumont,+199+-+Jardim+Padre+Anchieta,+Araraquara+-+SP,+14807-219"
+                            target="_blank">
+                            <i class="fa-solid fa-diamond-turn-right"></i> Como chegar
+                        </a>
+                    </div>
+                    <div class="mapa-item">
+                        <span class="mapa-badge"><i class="fa-solid fa-dumbbell"></i> Unidade 2</span>
+                        <h3>Jardim Imperador</h3>
+                        <a class="mapa-link" href="https://www.google.com/maps/dir/?api=1&destination=R.+Maurício+Galli,+3488+-+Jardim+Imperador,+Araraquara+-+SP,+14806-245"
+                            target="_blank">
+                            <i class="fa-solid fa-location-dot"></i> R. Maurício Galli, 3488 A - Araraquara/SP
+                        </a>
+                        <a class="mapa-link" href="tel:+5516997071255">
+                            <i class="fa-solid fa-phone"></i> (16) 99707-1255
+                        </a>
+                        <iframe
+                            src="https://www.google.com/maps?q=R.+Maurício+Galli,+3488+-+Jardim+Imperador,+Araraquara+-+SP,+14806-245&output=embed"
+                            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <a class="btn-outline-red mapa-btn-rota"
+                            href="https://www.google.com/maps/dir/?api=1&destination=R.+Maurício+Galli,+3488+-+Jardim+Imperador,+Araraquara+-+SP,+14806-245"
+                            target="_blank">
+                            <i class="fa-solid fa-diamond-turn-right"></i> Como chegar
+                        </a>
+                    </div>
+                    <div class="mapa-item">
+                        <span class="mapa-badge"><i class="fa-solid fa-dumbbell"></i> Unidade 3</span>
+                        <h3>Parque Igacaba</h3>
+                        <a class="mapa-link" href="https://www.google.com/maps/dir/?api=1&destination=Av.+Antônio+Honório+Real,+882+-+Parque+Igacaba,+Araraquara+-+SP,+14804-390"
+                            target="_blank">
+                            <i class="fa-solid fa-location-dot"></i> Av. Antônio Honório Real, 882 - Araraquara/SP
+                        </a>
+                        <a class="mapa-link" href="tel:+5516997330265">
+                            <i class="fa-solid fa-phone"></i> (16) 99733-0265
+                        </a>
+                        <iframe
+                            src="https://www.google.com/maps?q=Av.+Antônio+Honório+Real,+882+-+Parque+Igacaba,+Araraquara+-+SP,+14804-390&output=embed"
+                            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <a class="btn-outline-red mapa-btn-rota"
+                            href="https://www.google.com/maps/dir/?api=1&destination=Av.+Antônio+Honório+Real,+882+-+Parque+Igacaba,+Araraquara+-+SP,+14804-390"
+                            target="_blank">
+                            <i class="fa-solid fa-diamond-turn-right"></i> Como chegar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Brothers Thai. Todos os direitos reservados. Desenvolvido com foco em performance.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
